@@ -139,6 +139,142 @@ nav ul li a:hover{
     flex-direction: row-reverse;
 }
 
+.portfolio-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 20px;
+    font-family: "Jost", sans-serif;
+}
+
+.section-title {
+    font-size: 36px;
+    color: #833AB4;
+    margin: 0 0 30px 0;
+    text-align: center;
+    font-family: "BBH Bartle", sans-serif;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+.info-card {
+    background: linear-gradient(135deg, #f8f4ff 0%, #fff5f5 100%);
+    border-radius: 12px;
+    padding: 24px;
+    border-left: 4px solid #833AB4;
+    box-shadow: 0 4px 14px rgba(131, 58, 180, 0.12);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.info-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 20px rgba(131, 58, 180, 0.18);
+}
+
+.info-card h3 {
+    margin: 0 0 14px 0;
+    color: #FD1D1D;
+    font-size: 20px;
+}
+
+.info-card p {
+    margin: 8px 0;
+    color: #444;
+    font-size: 16px;
+}
+
+.education-showcase {
+    background-color: #fff9f0;
+    border-radius: 16px;
+}
+
+.timeline {
+    border-left: 3px solid #FCB045;
+    margin-left: 12px;
+    padding-left: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.timeline-item {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+    position: relative;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+.timeline-item::before {
+    content: "";
+    width: 12px;
+    height: 12px;
+    background: #FD1D1D;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    position: absolute;
+    left: -34px;
+    top: 24px;
+    box-shadow: 0 0 0 2px #FCB045;
+}
+
+.timeline-item h3 {
+    margin: 0 0 10px 0;
+    color: #833AB4;
+    font-size: 21px;
+}
+
+.timeline-item p {
+    margin: 6px 0;
+    color: #444;
+    font-size: 16px;
+}
+
+.achievements-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 22px;
+}
+
+.achievement-card {
+    background: #ffffff;
+    border: 1px solid #f4d9a8;
+    border-radius: 14px;
+    padding: 24px;
+    box-shadow: 0 5px 16px rgba(252, 176, 69, 0.2);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.achievement-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 22px rgba(131, 58, 180, 0.18);
+}
+
+.achievement-icon {
+    font-size: 34px;
+    margin-bottom: 10px;
+}
+
+.achievement-card h3 {
+    margin: 0 0 10px 0;
+    color: #833AB4;
+    font-size: 22px;
+}
+
+.achievement-card p {
+    margin: 6px 0;
+    color: #444;
+    line-height: 1.6;
+}
+
+.achievement-meta {
+    color: #FD1D1D;
+    font-size: 15px;
+}
+
 footer {
     text-align: center;
     background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
@@ -592,6 +728,41 @@ footer {
         font-size: 14px;
     }
 
+    .portfolio-section {
+        padding: 35px 15px;
+    }
+
+    .section-title {
+        font-size: 28px;
+    }
+
+    .info-card,
+    .achievement-card,
+    .timeline-item {
+        padding: 18px;
+    }
+
+    .info-card h3,
+    .achievement-card h3,
+    .timeline-item h3 {
+        font-size: 19px;
+    }
+
+    .info-card p,
+    .timeline-item p,
+    .achievement-card p {
+        font-size: 15px;
+    }
+
+    .timeline {
+        margin-left: 8px;
+        padding-left: 18px;
+    }
+
+    .timeline-item::before {
+        left: -28px;
+    }
+
     /* About Page */
     .about-hero h1, .services-hero h1, .contact-hero h1 {
         font-size: 32px;
@@ -735,6 +906,33 @@ footer {
 
     .project-info p {
         font-size: 13px;
+    }
+
+    .portfolio-section {
+        padding: 28px 10px;
+    }
+
+    .section-title {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .info-grid,
+    .achievements-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .timeline {
+        margin-left: 4px;
+        padding-left: 14px;
+        gap: 16px;
+    }
+
+    .timeline-item::before {
+        width: 10px;
+        height: 10px;
+        left: -22px;
+        top: 20px;
     }
 
     /* Hero sections */
